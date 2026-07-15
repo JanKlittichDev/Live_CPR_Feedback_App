@@ -13,7 +13,7 @@
 		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
 
 		<OutputType>Exe</OutputType>
-		<RootNamespace>Live_CPR_Feedback_App</RootNamespace>
+		<RootNamespace>Live_Live_CPR_Feedback_App</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
@@ -28,10 +28,10 @@
 		<MauiXamlInflator>SourceGen</MauiXamlInflator>
 
 		<!-- Display name -->
-		<ApplicationTitle>Live_CPR_Feedback_App</ApplicationTitle>
+		<ApplicationTitle>Live_Live_CPR_Feedback_App</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.live_cpr_feedback_app</ApplicationId>
+		<ApplicationId>com.companyname.live_Live_CPR_Feedback_App</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -66,8 +66,28 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+		<PackageReference Include="MathNet.Filtering" Version="0.7.0" />
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="10.0.0" />
+		<PackageReference Include="Microsoft.ML.OnnxRuntime" Version="1.27.1" />
+		<PackageReference Include="Plugin.Maui.Audio" Version="4.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="AAA_Data-Collection-App\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+
+  <ItemGroup>
+    <Compile Remove="AAA_Data-Collection-App\**\*.cs;AAA_KI-Prototyp\**\*.cs;AAA_urspruenglicher_Feedbackalgorithmus\**\*.cs" />
+    <MauiXaml Remove="AAA_Data-Collection-App\**\*.xaml;AAA_KI-Prototyp\**\*.xaml;AAA_urspruenglicher_Feedbackalgorithmus\**\*.xaml" />
+    <EmbeddedResource Remove="AAA_Data-Collection-App\**\*.xaml;AAA_KI-Prototyp\**\*.xaml;AAA_urspruenglicher_Feedbackalgorithmus\**\*.xaml" />
+    <None Include="AAA_Data-Collection-App\**\*;AAA_KI-Prototyp\**\*;AAA_urspruenglicher_Feedbackalgorithmus\**\*" />
+  </ItemGroup>
+  
+  
+  
 </Project>

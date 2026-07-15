@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Live_CPR_Feedback_App
+namespace Live_Live_CPR_Feedback_App
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

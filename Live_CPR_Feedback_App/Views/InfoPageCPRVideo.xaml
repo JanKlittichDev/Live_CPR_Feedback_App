@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:Live_CPR_Feedback_App.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Live_CPR_Feedback_App.Views.InfoPageCPRVideo"
+             x:DataType="ViewModels:InfoCPRVideoViewModel"
+             Title="CPR Instruction Video"
+             Shell.TitleColor="White"
+       Shell.ForegroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+
+            <!-- Video -->
+            <WebView HeightRequest="220"
+                     Source="https://www.youtube.com/embed/eNr9x3VJZyM?rel=0" />
+            <!--<toolkit:MediaElement Source="https://www.youtube.com/embed/eNr9x3VJZyM"
+                                  HeightRequest="220"
+                                  ShouldShowPlaybackControls="True" />-->
+            
+
+            <!-- Quelle -->
+            <Border StrokeShape="RoundRectangle 16" Padding="16" BackgroundColor="White">
+                <VerticalStackLayout Spacing="6">
+
+                    <Label Text="Source"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="European Resuscitation Council (ERC)"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="The ERC is the leading European organization for resuscitation science and education. It publishes the official CPR guidelines used across Europe, including the compression depth, rate, and ratio recommendations shown in this app."
+                           FontSize="15"
+                           TextColor="Black" />
+
+                    <Label Text="Website: erc.edu"
+                           FontSize="15"
+                           TextColor="Blue"
+                           TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding OpenERCWebsiteCommand}" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                    
+
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>

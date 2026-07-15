@@ -3,12 +3,78 @@
     x:Class="Live_CPR_Feedback_App.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Live_CPR_Feedback_App"
-    Title="Live_CPR_Feedback_App">
+    xmlns:views="clr-namespace:Live_CPR_Feedback_App.Views"
+    Title="Live_CPR_Feedback_App"
+    Shell.FlyoutBehavior="Flyout"
+    BackgroundColor="Purple">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+   
+    <!-- Startseite -->
+    <FlyoutItem Title="CPR Steps for Adults" Icon="menuicon_home.png">
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate views:MainPage}"
+            Route="MainPage" />
+    </FlyoutItem>
+
+    <!-- Metronome-->
+    <FlyoutItem Title="Metronome" Icon="menuicon_metronome.png">
+        <ShellContent
+        Title="Metronome"
+        ContentTemplate="{DataTemplate views:MetronomePage}"
+        Route="MetronomePage" />
+    </FlyoutItem>
+
+    <!-- Instruction-Video -->
+    <FlyoutItem Title="Instruction-Video" Icon="menuicon_video.png">
+        <ShellContent
+            Title="Instruction-Video"
+            ContentTemplate="{DataTemplate views:InfoPageCPRVideo}"
+            Route="InfoPageCPRVideo" />
+    </FlyoutItem>
+
+    <!-- CPR Inforamtions -->
+    <FlyoutItem Title="CPR Inforamtions" Icon="menuicon_infocpr.png">
+        <ShellContent
+        Title="CPR Inforamtions"
+        ContentTemplate="{DataTemplate views:InfoPageCPR}"
+        Route="InfoPageCPR" />
+    </FlyoutItem>
+
+    <!-- Acceleration-Sensor -->
+    <FlyoutItem Title="Acceleration-Sensor" Icon="menuicon_sensor.png">
+        <ShellContent
+            Title="Acceleration-Sensor"
+            ContentTemplate="{DataTemplate views:InfoPageSensor}"
+            Route="InfoPageSensor" />
+    </FlyoutItem>
+
+    <!-- Storage -->
+    <FlyoutItem Title="Storage" Icon="menuicon_storage.png">
+        <ShellContent
+            Title="Storage"
+            ContentTemplate="{DataTemplate views:StoragePage}"
+            Route="StoragePage" />
+    </FlyoutItem>
+
+    <!-- Settings -->
+    <FlyoutItem Title="Settings" Icon="menuicon_settings.png">
+        <ShellContent
+            Title="Settings"
+            ContentTemplate="{DataTemplate views:SettingsPage}"
+            Route="SettingsPage" />
+    </FlyoutItem>
+    
+    <!-- About --><!--
+    <FlyoutItem Title="About" Icon="menuicon_about.png">
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate views:InfoPageAbout}"
+            Route="InfoPageAbout" />
+    </FlyoutItem>-->
+
+    
 
 </Shell>
+
+    

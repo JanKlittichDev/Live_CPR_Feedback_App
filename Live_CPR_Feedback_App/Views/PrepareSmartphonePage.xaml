@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:Live_CPR_Feedback_App.ViewModels"
+             x:Class="Live_CPR_Feedback_App.Views.PrepareSmartphonePage"
+             x:DataType="ViewModels:PrepareSmartphoneViewModel"
+             Title="Prepare CPR"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="10"
+                             Spacing="8"
+                             VerticalOptions="Start">
+
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout>
+                    <Label Text="⚠️ Warning: This application is for educational purposes only and not for usage."
+                           FontSize="18"
+                           TextColor="Red"
+                           FontAttributes="Bold" />
+                </VerticalStackLayout>
+            </Border>
+
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 18"
+                    Padding="16"
+                    Margin="0,20,0,0">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="• Turn the smartphone upside down as shown in the picture."
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text="• Place it in the center of the chest."
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text=""
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Image Source="preparesmartphonepage_image.png"
+                           HeightRequest="300"
+                           HorizontalOptions="Center" />
+                </VerticalStackLayout>
+            </Border>
+
+
+            <Button Text="Continue!"
+                    Command="{Binding ContinueCommand}"
+                    BackgroundColor="Red"
+                    FontSize="22"
+                    FontAttributes="Bold"
+                    TextColor="White"
+                    CornerRadius="12"
+                    HeightRequest="62"
+                    Margin="0,15,0,0" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

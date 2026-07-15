@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Live_CPR_Feedback_App.Views.MetronomePage"
+             Title="Metronome"
+             Shell.TitleColor="White"
+       Shell.ForegroundColor="White">
+
+    
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="30:2"
+               FontSize="40"
+               HorizontalOptions="Center"
+               TextColor="Black" />
+
+        <Label Text="110 BPM"
+               FontSize="22"
+               HorizontalOptions="Center"
+               TextColor="Gray" />
+
+        <Button Text="Start"
+                Command="{Binding StartCommand}"
+                BackgroundColor="Green"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="50" />
+
+        <Button Text="Stop"
+                Command="{Binding StopCommand}"
+                BackgroundColor="Red"
+                TextColor="White"
+                CornerRadius="12"
+                HeightRequest="50" />
+    </VerticalStackLayout>
+    
+    
+</ContentPage>

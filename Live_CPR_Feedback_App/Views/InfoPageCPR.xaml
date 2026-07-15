@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Live_CPR_Feedback_App.Views.InfoPageCPR"
+             Title="CPR Informations"
+             BackgroundColor="White"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White">
+
+   
+             
+             
+
+        <ScrollView>
+
+            <VerticalStackLayout Padding="16"
+                             Spacing="10">
+
+                <!-- Cardiac arrest -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="What is Cardiac Arrest?"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Cardiac arrest is a life-threatening emergency in which the heart suddenly stops pumping blood effectively. Without blood circulation, the brain and other vital organs no longer receive enough oxygen. Immediate action is essential."
+                           FontSize="17"
+                           TextColor="Black" />
+
+                        <Label Text="Signs of cardiac arrest:"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="• The person is unresponsive&#10;• The person is not breathing normally&#10;• The person is gasping or only taking occasional breaths"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- When CPR is needed -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="When is CPR Needed?"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Start CPR immediately if the person is unresponsive and not breathing normally."
+                           FontSize="17"
+                           TextColor="Black"
+                           FontAttributes="Bold" />
+
+                        <Label Text="Possible causes:"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="• Sudden cardiac arrest&#10;• Drowning&#10;• Electric shock&#10;• Severe trauma&#10;• Drug overdose&#10;• Choking"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- What is CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="What is CPR?"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="CPR means Cardiopulmonary Resuscitation. It is an emergency procedure used to maintain blood circulation and oxygen delivery to the brain and other vital organs until professional help or an AED is available."
+                           FontSize="17"
+                           TextColor="Black" />
+
+                        <Label Text="CPR does not usually restart the heart. It helps keep the person alive until defibrillation or professional medical treatment can be provided."
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Importance of early CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Why Immediate CPR Matters"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="• Brain injury can begin within a few minutes without blood flow&#10;• Every minute without CPR reduces the chance of survival&#10;• Early CPR can double or triple the chance of survival&#10;• CPR maintains blood flow until an AED or emergency medical services arrive"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Chain of survival -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Chain of Survival"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="1. Recognize cardiac arrest&#10;2. Call emergency services: 112&#10;3. Start CPR immediately&#10;4. Use an AED as soon as available&#10;5. Continue CPR until professional help takes over"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- High quality adult CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="High-Quality Adult CPR"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="• Place your hands in the center of the chest on the lower half of the sternum&#10;• Push hard and fast&#10;• Compression rate: 100–120/min&#10;• Compression depth: 5–6 cm&#10;• Allow the chest to recoil completely after every compression&#10;• Avoid leaning on the chest&#10;• Keep interruptions as short as possible&#10;• Use an AED as soon as available"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Types of CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Types of CPR"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Standard CPR"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Give 30 chest compressions followed by 2 rescue breaths if you are trained and able to provide rescue breaths."
+                           FontSize="17"
+                           TextColor="Black" />
+
+                        <Label Text="Compression-Only CPR"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="If you are not trained or cannot provide rescue breaths, perform continuous chest compressions and follow the instructions of the emergency dispatcher."
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- AED information -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="What is an AED?"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="An Automated External Defibrillator (AED) is a portable device that analyzes the heart rhythm. It delivers an electric shock only if a shockable rhythm is detected."
+                           FontSize="17"
+                           TextColor="Black" />
+
+                        <Label Text="Why is it important?"
+                           FontSize="18"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="• It can treat certain life-threatening heart rhythms&#10;• It provides clear spoken and visual instructions&#10;• It works together with CPR&#10;• It should be used as soon as available"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- AED use -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="How to Use an AED"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="1. Turn on the AED&#10;2. Expose the person’s chest&#10;3. Dry the chest if necessary&#10;4. Attach the electrode pads as shown on the pads&#10;5. Follow the AED instructions&#10;6. Make sure nobody touches the person during rhythm analysis or shock delivery&#10;7. Resume CPR immediately when instructed"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                        <Label Text="Continue chest compressions while the AED is being prepared whenever possible."
+                           FontSize="17"
+                           TextColor="Black"
+                           FontAttributes="Bold" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Adult CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Adults"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="30 : 2"
+                           FontSize="25"
+                           FontAttributes="Bold"
+                           TextColor="Red" />
+
+                        <Label Text="Rate: 100–120 compressions/min"
+                           FontSize="18"
+                           TextColor="Black" />
+
+                        <Label Text="Depth: 5–6 cm"
+                           FontSize="19"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Hand position: center of the chest on the lower half of the sternum. Place one hand on top of the other."
+                           FontSize="16"
+                           TextColor="Black" />
+
+                        <Label Text="Allow full chest recoil and minimize interruptions."
+                           FontSize="16"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Child CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Children"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="30 : 2 for a single rescuer"
+                           FontSize="23"
+                           FontAttributes="Bold"
+                           TextColor="Red" />
+
+                        <Label Text="Rate: 100–120 compressions/min"
+                           FontSize="18"
+                           TextColor="Black" />
+
+                        <Label Text="Depth: about one third of the chest, approximately 5 cm"
+                           FontSize="19"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Use one or two hands depending on the size of the child."
+                           FontSize="16"
+                           TextColor="Black" />
+
+                        <Label Text="Rescue breaths are especially important because cardiac arrest in children is often caused by breathing problems."
+                           FontSize="16"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Infant CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Infants"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="30 : 2 for a single rescuer"
+                           FontSize="23"
+                           FontAttributes="Bold"
+                           TextColor="Red" />
+
+                        <Label Text="Rate: 100–120 compressions/min"
+                           FontSize="18"
+                           TextColor="Black" />
+
+                        <Label Text="Depth: about one third of the chest, approximately 4 cm"
+                           FontSize="19"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Use the recommended infant chest-compression technique."
+                           FontSize="16"
+                           TextColor="Black" />
+
+                        <Label Text="Rescue breaths are especially important in infants."
+                           FontSize="16"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Trained rescuers -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="For Trained Rescuers"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Two trained rescuers may use a ratio of 15 chest compressions to 2 rescue breaths for children and infants. Ventilation is especially important in pediatric cardiac arrest."
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Recovery position -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="When CPR is Not Needed"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="Do not start CPR if the person is breathing normally."
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="If the person is unresponsive but breathing normally:&#10;• Call 112&#10;• Place the person in the recovery position when appropriate&#10;• Continue to monitor breathing&#10;• Start CPR immediately if normal breathing stops"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Continue CPR -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Continue CPR Until"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="• The person begins to breathe normally or shows clear signs of life&#10;• Emergency medical professionals take over&#10;• The AED instructs you to stop briefly&#10;• The situation becomes unsafe&#10;• You are physically unable to continue"
+                           FontSize="17"
+                           TextColor="Black" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Emergency tip -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Emergency Tip"
+                           FontSize="22"
+                           FontAttributes="Bold"
+                           TextColor="Red" />
+
+                        <Label Text="Call 112 immediately. Use speakerphone if possible and begin CPR as soon as possible. Follow the instructions of the emergency dispatcher."
+                           FontSize="17"
+                           TextColor="Black"
+                           FontAttributes="Bold" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+
+                <!-- Disclaimer -->
+            <Border StrokeShape="RoundRectangle 20"
+                   Padding="18"
+                   BackgroundColor="White">
+
+                    <VerticalStackLayout Spacing="8">
+
+                        <Label Text="Important Information"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                        <Label Text="This page provides a short overview and does not replace certified first-aid or CPR training. In an emergency, call 112 and follow the dispatcher’s instructions."
+                           FontSize="15"
+                           TextColor="Black"
+                           FontAttributes="Italic" />
+
+                    </VerticalStackLayout>
+
+                </Border>
+
+            </VerticalStackLayout>
+
+        </ScrollView>
+
+    </ContentPage>
+    

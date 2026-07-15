@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Live_CPR_Feedback_App.Views.SettingsPage"
+             Title="Settings"
+             BackgroundColor="White"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White">
+
+    <ScrollView>
+        <Border BackgroundColor="White"
+                Stroke="Black"
+                StrokeThickness="2"
+                StrokeShape="RoundRectangle 16"
+                Margin="16"
+                Padding="16"
+                VerticalOptions="Start">
+
+            <VerticalStackLayout Spacing="24" VerticalOptions="Start">
+
+                <Label Text="Analysis Method"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalTextAlignment="Center"/>
+
+                <!-- Toggle AI / Signal Processing -->
+                <Border BackgroundColor="#F0F0F0"
+                        StrokeShape="RoundRectangle 16"
+                        Stroke="Black"
+                        Padding="20">
+                    <Grid ColumnDefinitions="*,Auto" RowSpacing="6">
+
+                        <VerticalStackLayout Grid.Column="0" Spacing="4">
+                            <Label Text="{Binding ModeLabel}"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="Black"/>
+                        </VerticalStackLayout>
+
+                        <Switch Grid.Column="1"
+                                IsToggled="{Binding UseKI}"
+                                OnColor="Purple"
+                                VerticalOptions="Center"/>
+
+                    </Grid>
+                </Border>
+
+                <!-- Info-Box AI Mode -->
+                <Border BackgroundColor="#F5F5F5"
+                        StrokeShape="RoundRectangle 12"
+                        Stroke="Black"
+                        Padding="16"
+                        IsVisible="{Binding UseKI}">
+                    <VerticalStackLayout Spacing="6">
+
+                        <Grid ColumnDefinitions="16,*">
+                            <Label Grid.Column="0" Text="•" TextColor="Black" FontSize="13" />
+                            <Label Grid.Column="1"
+                                   Text="AI uses two ONNX models for depth and frequency."
+                                   TextColor="Black" FontSize="13" LineBreakMode="WordWrap" />
+                        </Grid>
+
+                        <Grid ColumnDefinitions="16,*">
+                            <Label Grid.Column="0" Text="•" TextColor="Black" FontSize="13" />
+                            <Label Grid.Column="1"
+                                   Text="In AI mode, rate and depth are not displayed individually – feedback comes directly from the AI model."
+                                   TextColor="Black" FontSize="13" LineBreakMode="WordWrap" />
+                        </Grid>
+
+                    </VerticalStackLayout>
+                </Border>
+
+                <!-- Info-Box Signal Processing Pipeline -->
+                <Border BackgroundColor="#F5F5F5"
+                        StrokeShape="RoundRectangle 12"
+                        Stroke="Black"
+                        Padding="16"
+                        IsVisible="{Binding UseSV}">
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Used Signal Processing Pipeline"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               TextColor="Black" />
+
+                        <VerticalStackLayout Spacing="4">
+                            <Label Text="1. Raw data" TextColor="Black" FontSize="13" />
+                            <Label Text="2. Weighted smoothing" TextColor="Black" FontSize="13" />
+                            <Label Text="3. Integration" TextColor="Black" FontSize="13" />
+                            <Label Text="4. Transient components emphasizing" TextColor="Black" FontSize="13" />
+                            <Label Text="5. Integration" TextColor="Black" FontSize="13" />
+                            <Label Text="6. Transient components emphasizing" TextColor="Black" FontSize="13" />
+                            <Label Text="7. Peak detection" TextColor="Black" FontSize="13" />
+                            <Label Text="8. Difference of positive peak to negative peak" TextColor="Black" FontSize="13" />
+                            <Label Text="9. Chest compression depth" TextColor="Black" FontSize="13" />
+                        </VerticalStackLayout>
+
+                        <BoxView HeightRequest="1" BackgroundColor="Gray" Margin="0,4"/>
+
+                        <Label FontSize="11" TextColor="Gray" LineBreakMode="WordWrap">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Source: " FontAttributes="Bold" />
+                                    <Span Text="Y. Song, J. Oh, and Y. Chee, &quot;A New Chest Compression Depth Feedback Algorithm for High-Quality CPR Based on Smartphone,&quot; Telemedicine and e-Health, vol. 21, no. 1, pp. 36–41, Jan. 2015, doi: 10.1089/tmj.2014.0051." 
+                                          FontAttributes="Italic" />
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Label Text="https://pubmed.ncbi.nlm.nih.gov/25402865/"
+                               FontSize="11"
+                               TextColor="Blue"
+                               LineBreakMode="WordWrap">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenPipelineSourceCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+
+                    </VerticalStackLayout>
+                </Border>
+
+            </VerticalStackLayout>
+        </Border>
+    </ScrollView>
+
+</ContentPage>

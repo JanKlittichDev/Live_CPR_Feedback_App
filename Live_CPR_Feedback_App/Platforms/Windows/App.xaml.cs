@@ -3,7 +3,7 @@
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Live_CPR_Feedback_App.WinUI
+namespace Live_Live_CPR_Feedback_App.WinUI
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.

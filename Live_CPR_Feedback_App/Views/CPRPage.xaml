@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Live_CPR_Feedback_App.Views.CPRPage"
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="Black"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White">
+
+    <Grid RowDefinitions="*,*,*"
+          RowSpacing="8"
+          Padding="10,40,10,10"
+          Rotation="180">
+
+        <!-- CPR-TIME + NOFLOW -->
+        <Grid Grid.Row="0"
+              ColumnDefinitions="*,*"
+              ColumnSpacing="10">
+
+            <Border Grid.Column="0"
+                    BackgroundColor="#1A1A1A"
+                    StrokeShape="RoundRectangle 16"
+                    Stroke="Transparent"
+                    Padding="10">
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <Label Text="CPR TIME"
+                           FontSize="13" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding CPRDurationText}"
+                           FontSize="30" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"
+                           LineBreakMode="NoWrap"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Grid.Column="1"
+                    BackgroundColor="#1A1A1A"
+                    StrokeShape="RoundRectangle 16"
+                    Stroke="Transparent"
+                    Padding="10">
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <Label Text="NO-FLOW"
+                           FontSize="13" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding NoFlowText}"
+                           FontSize="30" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"
+                           LineBreakMode="NoWrap"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </Grid>
+
+        <!-- RATE + DEPTH -->
+        <Grid Grid.Row="1"
+              ColumnDefinitions="*,*"
+              ColumnSpacing="10">
+
+            <Border Grid.Column="0"
+                    BackgroundColor="#1A1A1A"
+                    StrokeShape="RoundRectangle 16"
+                    Stroke="Transparent"
+                    Padding="10">
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <Label Text="RATE"
+                           FontSize="18" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding RateText}"
+                           FontSize="38" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"
+                           LineBreakMode="NoWrap"/>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Grid.Column="1"
+                    BackgroundColor="#1A1A1A"
+                    StrokeShape="RoundRectangle 16"
+                    Stroke="Transparent"
+                    Padding="10">
+                <VerticalStackLayout Spacing="2" VerticalOptions="Center">
+                    <Label Text="DEPTH"
+                           FontSize="18" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding DepthText}"
+                           FontSize="38" FontAttributes="Bold"
+                           TextColor="White" HorizontalTextAlignment="Center"
+                           LineBreakMode="NoWrap"/>
+                </VerticalStackLayout>
+            </Border>
+
+        </Grid>
+
+        <!-- FEEDBACK -->
+        <Border Grid.Row="2"
+                BackgroundColor="{Binding FeedbackColor}"
+                StrokeShape="RoundRectangle 16"
+                Stroke="Transparent"
+                Padding="12">
+            <Label Text="{Binding FeedbackText}"
+                   FontSize="26" FontAttributes="Bold"
+                   TextColor="White"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   LineBreakMode="WordWrap"/>
+        </Border>
+
+    </Grid>
+
+</ContentPage>

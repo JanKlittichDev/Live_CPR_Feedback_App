@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:Models="clr-namespace:Live_CPR_Feedback_App.Models"
+             xmlns:Viewmodels="clr-namespace:Live_CPR_Feedback_App.ViewModels"
+             x:Class="Live_CPR_Feedback_App.Views.StoragePage"
+             Title="Storage"
+             BackgroundColor="White"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White">
+    
+    <ScrollView>
+
+        <CollectionView ItemsSource="{Binding Sessions}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="Models:CPRSessionInfo">
+                    <Grid Padding="10" ColumnDefinitions="*,Auto,Auto">
+                        <Label Text="{Binding DisplayName}"
+                               VerticalOptions="Center"/>
+
+                        <Button Grid.Column="1"
+                            Text="Export"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.ExportCommand}"
+                            CommandParameter="{Binding .}"/>
+
+                        <Button Grid.Column="2"
+                            Text="Delete"
+                            Command="{Binding Source={RelativeSource AncestorType={x:Type CollectionView}}, Path=BindingContext.DeleteCommand}"
+                            CommandParameter="{Binding .}"/>
+
+
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </ScrollView>
+</ContentPage>

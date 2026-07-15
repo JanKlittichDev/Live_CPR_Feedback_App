@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ViewModels="clr-namespace:Live_CPR_Feedback_App.ViewModels"
+             x:Class="Live_CPR_Feedback_App.Views.MainPage"
+             x:DataType="ViewModels:MainViewModel"
+             Title="CPR Steps for Adults"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White">
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16"
+                             Spacing="10">
+
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout>
+                    <Label Text="⚠️ Warning: This application is for educational purposes only and not for usage."
+                           FontSize="18"
+                           TextColor="Red"
+                           FontAttributes="Bold" />
+                </VerticalStackLayout>
+            </Border>
+
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout Spacing="7">
+                    <Label Text="1. Danger"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="DarkBlue" />
+                    <Label Text="• Check if the scene is safe."
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text="→ Safe for you and the victim?"
+                           FontSize="16"
+                           TextColor="Blue"
+                           FontAttributes="Bold" />
+                    <Label Text="2. Response"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="DarkBlue" />
+                    <Label Text="• Tap the person and shout."
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text="→ Any response?"
+                           FontSize="16"
+                           TextColor="Blue"
+                           FontAttributes="Bold" />
+                    <Label Text="3. Breathing"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           TextColor="DarkBlue" />
+                    <Label Text="• Open the airway: tilt head, lift chin."
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text="• Check breathing for no more than 10 seconds."
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text="→ Breathing present and normal?"
+                           FontSize="16"
+                           TextColor="Blue"
+                           FontAttributes="Bold" />
+                </VerticalStackLayout>
+            </Border>
+
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout Spacing="8">
+                    <Label Text="Decision"
+                           FontSize="19"
+                           FontAttributes="Bold"
+                           TextColor="Red" />
+                    <Label Text="If there is no response and no normal breathing:"
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text="• Call emergency services (112)"
+                           FontSize="16"
+                           TextColor="Black" />
+                    <Label Text="• Start CPR immediately ⬇️"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="Red" />
+                    <Label Text="• Ask for an automated external defibrillator (AED) if available"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="DarkBlue" />
+                </VerticalStackLayout>
+            </Border>
+
+
+            <Button Text="Continue!"
+                    Command="{Binding ContinueCommand}"
+                    BackgroundColor="Red"
+                    TextColor="White"
+                    CornerRadius="14"
+                    HeightRequest="62"
+                    HorizontalOptions="Fill"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Margin="0,4,0,0" />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
