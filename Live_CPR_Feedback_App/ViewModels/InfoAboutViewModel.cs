@@ -1,7 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.Input;
 using System.Windows.Input;
 
-namespace CPR_Feedback_App.ViewModels
+namespace Live_CPR_Feedback_App.ViewModels
 {
     public class InfoAboutViewModel 
     {

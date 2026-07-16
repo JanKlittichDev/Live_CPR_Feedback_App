@@ -1,5 +1,5 @@
-using CPR_Feedback_App.ViewModels;
-namespace CPR_Feedback_App.Views;
+using Live_CPR_Feedback_App.ViewModels;
+namespace Live_CPR_Feedback_App.Views;
 
 public partial class InfoPageAbout : ContentPage 
 {
