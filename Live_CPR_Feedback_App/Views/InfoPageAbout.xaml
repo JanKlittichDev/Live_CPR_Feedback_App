@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CPR_Feedback_App.Views.InfoPageAbout"
+             Title="About"
+             Shell.TitleColor="White"
+             Shell.ForegroundColor="White">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="16" Spacing="12">
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="⚠️ Warning: This application is for educational purposes only and not for usage."
+                           FontSize="18"
+                           TextColor="Red"
+                           FontAttributes="Bold" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="This app was created as a project at Pforzheim University in the Bachelor program of Medical Engineering."
+                           FontAttributes="Bold"
+                           FontSize="18"
+                           TextColor="Black" />
+                    <Button Text="Pforzheim University"
+                            Command="{Binding OpenHSLinkCommand}"
+                            BackgroundColor="Blue"
+                            TextColor="White"
+                            CornerRadius="12"
+                            HorizontalOptions="Fill" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout Spacing="5">
+
+                    <Label Text="Supervisors:"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black"/>
+
+                    <Label Text="Prof. Dr. Sascha Seifert"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalOptions="Center" />
+
+                    <Grid ColumnDefinitions="16,*">
+                        <Label Grid.Column="0" Text="•" TextColor="Blue" />
+                        <Label Grid.Column="1" Text="University-Profile" TextColor="Blue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenSeifertLink1Command}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <Grid ColumnDefinitions="16,*">
+                        <Label Grid.Column="0" Text="•" TextColor="Blue" />
+                        <Label Grid.Column="1" Text="LinkedIn-Profile" TextColor="Blue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenSeifertLink2Command}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                    <Label Text="M.Eng Max Barchet"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalOptions="Center" />
+                    <Grid ColumnDefinitions="16,*">
+                        <Label Grid.Column="0" Text="•" TextColor="Blue" />
+                        <Label Grid.Column="1" Text="LinkedIn-Profile" TextColor="Blue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenBarchetLinkCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                    <Label Text=""
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="DarkBlue" />
+
+                    <Label Text="Developed by:"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Label Text="Jan Klittich"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalOptions="Center" />
+                    <Grid ColumnDefinitions="16,*">
+                        <Label Grid.Column="0" Text="•" TextColor="Blue" />
+                        <Label Grid.Column="1" Text="LinkedIn-Profile" TextColor="Blue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenKlittichLinkCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                    <Label Text="Sanjita Basnet"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalOptions="Center" />
+                    <Grid ColumnDefinitions="16,*">
+                        <Label Grid.Column="0" Text="•" TextColor="Blue" />
+                        <Label Grid.Column="1" Text="LinkedIn-Profile" TextColor="Blue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenBasnetLinkCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                    <Label Text="Michael Kiryokoz"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalOptions="Center" />
+                    <Grid ColumnDefinitions="16,*">
+                        <Label Grid.Column="0" Text="•" TextColor="Blue" />
+                        <Label Grid.Column="1" Text="LinkedIn-Profile" TextColor="Blue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenKiryokozLinkCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                    <Label Text="Nico Reim"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalOptions="Center" />
+                    <Grid ColumnDefinitions="16,*">
+                        <Label Grid.Column="0" Text="•" TextColor="Blue" />
+                        <Label Grid.Column="1" Text="LinkedIn-Profile" TextColor="Blue">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding OpenReimLinkCommand}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+
+                    <Label Text=""
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="DarkBlue" />
+
+                    <Label Text="If you have any questions, feedback, or suggestions about the app, please feel free to contact us."
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalOptions="Center" />
+
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="How it works"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Grid ColumnDefinitions="20,*">
+                        <Label Grid.Column="0" Text="•" FontSize="18" TextColor="Black" />
+                        <Label Grid.Column="1"
+                               Text="The app uses the smartphone's accelerometer sensor."
+                               FontSize="18"
+                               TextColor="Black"
+                               LineBreakMode="WordWrap" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="20,*">
+                        <Label Grid.Column="0" Text="•" FontSize="18" TextColor="Black" />
+                        <Label Grid.Column="1"
+                               Text="It calculates chest compression depth (CCD) and compressions per minute (CPM) using either a signal-processing algorithm or a trained AI."
+                               FontSize="18"
+                               TextColor="Black"
+                               LineBreakMode="WordWrap" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="20,*">
+                        <Label Grid.Column="0" Text="•" FontSize="18" TextColor="Black" />
+                        <Label Grid.Column="1"
+                               Text="Based on CCD and CPM it provides visual and auditory feedback."
+                               FontSize="18"
+                               TextColor="Black"
+                               LineBreakMode="WordWrap" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+            <Border BackgroundColor="White"
+                    Stroke="Gray"
+                    StrokeShape="RoundRectangle 16"
+                    Padding="16">
+                <VerticalStackLayout Spacing="10">
+                    <Label Text="Goal of the Student Project"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="Black" />
+
+                    <Grid ColumnDefinitions="20,*">
+                        <Label Grid.Column="0" Text="•" FontSize="18" TextColor="Black" />
+                        <Label Grid.Column="1"
+                               Text="The app shall provide feedback during a hypothetical CPR."
+                               FontSize="18"
+                               TextColor="Black"
+                               LineBreakMode="WordWrap" />
+                    </Grid>
+
+                    <Grid ColumnDefinitions="20,*">
+                        <Label Grid.Column="0" Text="•" FontSize="18" TextColor="Black" />
+                        <Label Grid.Column="1"
+                               Text="This shall help the user to perform better chest compressions."
+                               FontSize="18"
+                               TextColor="Black"
+                               LineBreakMode="WordWrap" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Border>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

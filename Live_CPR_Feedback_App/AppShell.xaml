@@ -65,13 +65,13 @@
             Route="SettingsPage" />
     </FlyoutItem>
     
-    <!-- About --><!--
+    <!-- About -->
     <FlyoutItem Title="About" Icon="menuicon_about.png">
         <ShellContent
             Title="About"
             ContentTemplate="{DataTemplate views:InfoPageAbout}"
             Route="InfoPageAbout" />
-    </FlyoutItem>-->
+    </FlyoutItem>
 
     
 
