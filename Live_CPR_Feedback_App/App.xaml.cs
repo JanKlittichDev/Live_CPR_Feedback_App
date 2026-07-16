@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
-namespace Live_Live_CPR_Feedback_App
+namespace Live_CPR_Feedback_App
 {
     public partial class App : Application
     {

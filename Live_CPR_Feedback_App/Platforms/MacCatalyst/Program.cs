@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Live_Live_CPR_Feedback_App
+namespace Live_CPR_Feedback_App
 {
     public class Program
     {

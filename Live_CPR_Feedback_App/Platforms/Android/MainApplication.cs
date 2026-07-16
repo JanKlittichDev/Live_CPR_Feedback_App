@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Live_Live_CPR_Feedback_App
+namespace Live_CPR_Feedback_App
 {
     [Application]
     public class MainApplication : MauiApplication
